@@ -101,4 +101,5 @@ from collections import deque
 
 # 문제
 1. 음료수 얼려먹기
-2. 미로 탈출
+    - https://github.com/NIckmin96/this_is_coding_test/blob/main/DFS_BFS/_1.py 
+3. 미로 탈출
