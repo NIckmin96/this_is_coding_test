@@ -100,7 +100,5 @@ from collections import deque
 |구현 방법|재귀함수 이용|큐 자료구조 이용|
 
 # 문제
-1. 음료수 얼려먹기
-    - https://github.com/NIckmin96/this_is_coding_test/blob/main/DFS_BFS/_1.py 
-3. 미로 탈출
-    - https://github.com/NIckmin96/this_is_coding_test/blob/main/DFS_BFS/_2.py 
+1. [음료수 얼려먹기](https://github.com/NIckmin96/this_is_coding_test/blob/main/DFS_BFS/_1.py)
+2. [미로 탈출](https://github.com/NIckmin96/this_is_coding_test/blob/main/DFS_BFS/_2.py)
