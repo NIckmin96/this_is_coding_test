@@ -210,3 +210,8 @@ print(result)
 ```
 ### 정렬 라이브러리의 시간 복잡도
 - 정렬 라이브러리는 최악의 경우에도 $O(NlogN)$을 보장
+
+# 문제
+1. [위에서 아래로](https://github.com/NIckmin96/this_is_coding_test/blob/main/sorting/_1.py)
+2. [성적이 낮은 순서로 학생 출력하기](https://github.com/NIckmin96/this_is_coding_test/blob/main/sorting/_2.py)
+3. [두 배열의 원소 교체](https://github.com/NIckmin96/this_is_coding_test/blob/main/sorting/_3.py)
