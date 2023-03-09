@@ -134,5 +134,5 @@ print(input_data)
 ```
 - 입력후 엔터를 치면 줄 바꿈으로 인식되기 때문에 `rstrip`을 꼭 넣어주어야 한다!
 # 문제
-1. [부품 찾기]
-2. [떡볶이 떡 만들기]
+1. [부품 찾기](https://github.com/NIckmin96/this_is_coding_test/blob/main/search/_1.py)
+2. [떡볶이 떡 만들기](https://github.com/NIckmin96/this_is_coding_test/blob/main/search/_2.py)
