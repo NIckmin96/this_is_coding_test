@@ -96,6 +96,7 @@ print(d[n])
 > Tip : `sys.setrecursionlimit()` 함수를 사용하면 재귀 제한을 완화할 수 있다.
 
 ## 문제
-1. [1로 만들기]()
+1. [1로 만들기](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_1.py)
+    - [Solution](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_1_sol.py)
 2. [개미 전사]()
 3. [바닥 공사]()
