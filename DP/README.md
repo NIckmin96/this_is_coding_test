@@ -98,5 +98,5 @@ print(d[n])
 ## 문제
 1. [1로 만들기](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_1.py)
     - [Solution](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_1_sol.py)
-2. [개미 전사]()
-3. [바닥 공사]()
+2. [개미 전사](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_2.py)
+3. [바닥 공사](https://github.com/NIckmin96/this_is_coding_test/blob/main/DP/_3.py)
