@@ -183,3 +183,58 @@ for i in range(1, n+1):
         print(distance[i])
 ```
 ## 플로이드 워셜 알고리즘
+> 모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구하는 경우 사용
+- 짧은 소스 코드
+- 단계마다 거쳐 가는 노드를 기준으로 알고리즘 수행
+    - 방문하지 않은 노드 중에서 최단 거리를 갖는 노드를 찾을 필요가 X
+- 노드의 수가 N일 떄, N번의 단계 수행
+    - 단계마다 $O(N^2)$
+    - 총 $O(N^3)$
+- 2차원 리스트에 *최단 거리* 정보 저장
+    - 다익스트라 : 1차원 리스트(출발 노드 1개이기 떄문)
+- Dynamic Programming 알고리즘 기반
+    - 다익스트라 : Greedy 알고리즘 기반
+- 현재 확인하고 있는 노드를 제외하고, N-1개의 노드 중에서 서로 다른 노드쌍을 선택하고 각 조합의 비용을 확인한 뒤, 최단 거리 갱신
+    - $O(_{N-1}P_2) = O(N^2)$
+- 점화식
+    - $D_{ab} = min(D_{ab}, D_{ak}+D_{kb})$
+    - $A \rightarrow B$의 최소 비용과 $A \rightarrow K \rightarrow B$의 최소 비용 비교
+```python
+# 플로이드 워셜 알고리즘 소스코드
+import sys
+input = sys.stdin.readline
+INF = int(1e9)
+
+# 노드의 개수 및 간선의 개수를 입력받기
+n = int(input())
+m = int(input())
+# 2차원 리스트(그래프 표현)을 만들고, 모든 값을 무한으로 초기화
+graph = [[INF]*(n+1) for _ in range(n+1)]
+# 자기 자신에서 자기 자신으로 가는 비용은 0으로 초기화
+for a in range(1,n+1) : 
+    for b in range(1,n+1):
+        if a==b : 
+            grpah[a][b] = 0
+# 각 간선에 대한 정보를 입력받아, 그 값으로 초기화
+for _ in range(m):
+    # A에서 B로 가는 비용은 C
+    a,b,c = map(int, input().split())
+    graph[a][b] = c
+
+# 점화식에 따라 플로이드 워셜 알고리즘 수행
+for k in range(1,n+1):
+    for a in range(1,n+1):
+        for b in range(1,n+1):
+            graph[a][b] = min(graph[a][b], graph[a][k]+graph[k][b])
+
+# 수행된 결과를 출력
+for a in range(1,n+1):
+    for b in range(1,n+1):
+        # 도달할 수 없는 경우, INFINITY
+        if graph[a][b] == INF:
+            print("INFINITY")
+        else : 
+            print(graph[a][b], end=' ')
+
+    print()
+```
