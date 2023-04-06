@@ -238,3 +238,7 @@ for a in range(1,n+1):
 
     print()
 ```
+
+## 문제 풀이
+1. [미래도시](https://github.com/NIckmin96/this_is_coding_test/blob/main/shortest_path/_1.py)
+2. [전보](https://github.com/NIckmin96/this_is_coding_test/blob/main/shortest_path/_2.py)
